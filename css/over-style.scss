@@ -1149,6 +1149,15 @@ input[type="file"] {
 
 //error
 
+.slick-next {
+    left: 0;
+    right: auto;
+}
+.slick-prev {
+    right: 0;
+    left: auto;
+}
+
 
 //footer 
 .footer {
@@ -1269,12 +1278,19 @@ input[type="file"] {
     .topbar {
         .navbar-brand {
             img {
-                max-width: 150px;
+                max-width: 130px;
             }
         }
     }
 
     .p-5 {
         padding: 1rem !important;
+    }
+    #langugeDropdown {
+        width: 20px;
+        overflow: hidden;
+    }
+    .topbar .nav-item .nav-link {
+        padding: 0 5px;
     }
 }

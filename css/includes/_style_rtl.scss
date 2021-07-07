@@ -240,3 +240,11 @@ html[dir=rtl] {
       margin-right: 0 !important;
    }
 }
+[dir=rtl] {
+   .slick-next {
+      left: 0;
+  }
+   .slick-prev {
+      right: 0;
+  }
+}
