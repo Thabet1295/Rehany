@@ -1,0 +1,53 @@
+extend index 
+
+block website_title 
+	title delta | shop cart
+
+block home_block 
+	// slider sec strat
+	section#slider-sec(class="slider-sec parallax", style="background: url('../img/banner1.5.jpg');")
+	// slider sec end
+	
+	// START HEADING SECTION
+	div(class="about_content")
+		div(class="container")
+			div(class="row")
+				div(class="col-sm-12 col-md-12 col-lg-10  text-center text-lg-left wow slideInUp", data-wow-duration="2s")
+					h2(class="heading") Get Ready For Checkout?
+					p(class="para_text") Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores explicabo laudantium, omnis provident consectetur adipisicing elit quam reiciendis voluptatum?
+		// START SHOP CART SECTION
+		div(class="shop-cart wow slideInUp", data-wow-duration="2s")
+			div(class="container")
+				// START SHOP CART CHECKOUT FORM
+				div(class="row pt-5")
+					div(class="col-12 col-lg-8 wow slideInLeft", data-wow-duration="2s")
+						div(class="calculate-shipping")
+							h4(class="heading") Calculate Shipping
+							form
+								div(class="form-group")
+									input(class="form-control", placeholder="Name")
+								div(class="form-group")
+									input(class="form-control", placeholder="Name")
+								div(class="form-group")
+									input(class="form-control", placeholder="Name")
+								div(class="form-group")
+									input(class="form-control", placeholder="Name")
+								table(width="100%")
+									tr
+										td
+											ul(class="color-grey")
+												li
+													div(class="custom-control custom-radio")
+														input#flat-rate(type="radio", name="shipping", class="custom-control-input", checked="")
+														label(class="custom-control-label", for="flat-rate") paypal
+												li
+													div(class="custom-control custom-radio")
+														input#free-shipping(type="radio", name="shipping", class="custom-control-input")
+														label(class="custom-control-label", for="free-shipping") visa
+										td
+									tr
+										td Total
+										td(class="total") $300.00
+								a(href="#", class="btn yellow-color-green-gradient-btn") Calculate
+				// END SHOP CART CHECKOUT FORM
+		// END SHOP CART SECTION

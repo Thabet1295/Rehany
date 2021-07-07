@@ -1,0 +1,42 @@
+extend index 
+
+block website_title 
+	title delta | login
+
+block home_block 
+	// slider sec strat
+	section#slider-sec(class="slider-sec parallax", style="background: url('../img/banner1.5.jpg');")
+	// slider sec end
+
+	// Contact Us Start
+	section#contact-sec(class="contact-sec")
+		div(class="container")
+			div(class="row justify-content-center")
+				div(class="col-11 col-lg-7 contact-box wow slideInRight", data-wow-delay=".8s")
+					div(class="c-box wow fadeInRight")
+						h4(class="small-heading") Login
+						hr
+						form(class="contact-form")
+							div(class="row my-form")
+								div(class="col-md-12 col-sm-12")
+									label Email
+									input(type="email", class="form-control", name="userEmail", placeholder="Email", required="required")
+								div(class="col-12 col-md-12")
+									label Password
+									input(type="password", class="form-control", name="userSubject", placeholder="Password", required="required")
+								div(class="col-12 col-sm-6")
+									div(class="form-group")
+										div(class="form-check rembmer-button")
+											input(class="form-check-input", type="checkbox", name="remember")
+											label(class="form-check-label", for="remember")
+												| remember me
+								div(class="col-12 col-sm-6")
+									div(class="form-group forget-button")
+										a(class="forgot_password", href="")
+											| forget password?
+								div(class="col-12")
+									button(class="btn green-color-yellow-gradient-btn user-contact contact_btn", type="submit")
+										| SUBMIT
+									a(href="" class="btn yellow-color-green-gradient-btn new-user-btn")
+										| new user
+	// Contact Us End

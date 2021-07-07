@@ -1,0 +1,158 @@
+extend index 
+
+block website_title 
+	title delta | listing
+
+block home_block 
+	// slider sec strat
+	section#slider-sec(class="slider-sec parallax", style="background: url('img/banner1.5.jpg');")
+	// slider sec end
+
+	// Product Line Up Start
+	div(class="product-listing")
+		div(class="container")
+			div(class="row no-gutters")
+				// START STICKY NAV
+				div(class="col-12 col-lg-4 order-2 order-lg-1 sticky")
+					#product-filter-nav(class="product-filter-nav mb-3")
+						div(class="product-category")
+							h5(class="filter-heading  text-center text-lg-left") Category
+							ul
+								li
+									a(href="javascript:void(0)") June 
+									span (2)
+								li
+									a(href="javascript:void(0)") July 
+									span (4)
+								li
+									a(href="javascript:void(0)") Augest 
+									span (2)
+								li
+									a(href="javascript:void(0)") March 
+									span (7)
+								li
+									a(href="javascript:void(0)") May 
+									span (9)
+						div(class="product-price mt-1")
+							h5(class="filter-heading") Shop By
+							#slider-range
+							p(class="price-num", style="color: #0b2e13;") Price: 
+								span#min-p
+								span#max-p
+						button(class="btn yellow-color-green-gradient-btn mt-1") Filter
+				// END STICKY NAV
+				// START PRODUCT COL 8
+				div(class="col-md-12 col-lg-8 order-1 order-lg-2")
+					div(class="row")
+						// START LISTING HEADING
+						div(class="col-12 product-listing-heading")
+							h2(class="heading text-left") Product Listing
+							p(class="para_text text-left") Lorem ipsum dolor sit amet, consectetur adipiscing elit. tellus lacus faucibus lectus, sed cursused eros ligula non odio.
+						// END LISTING HEADING
+						// START PRODUCT LISTING SECTION
+						div(class="col-12 product-listing-products")
+							// START DISPLAY PRODUCT
+							div(class="product-list row")
+								div(class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp", data-wow-delay=".2s")
+									div(class="product-item")
+										div(class="item p-item-img")
+											img(src="img/products/01.webp", alt="images")
+											div(class="text-center d-flex justify-content-center align-items-center")
+												a(class="listing-cart-icon", href="shop-cart.html")
+													i(class="fa fa-shopping-cart")
+									div(class="p-item-detail")
+										h4(class="text-center p-item-name")
+											a(href="product-detail.html")  So Sad Today 
+										p(class="text-center p-item-price") $100.00
+								div(class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp", data-wow-delay=".2s")
+									div(class="product-item")
+										div(class="item p-item-img")
+											img(src="img/products/02.webp", alt="images")
+											div(class="text-center d-flex justify-content-center align-items-center")
+												a(class="listing-cart-icon", href="shop-cart.html")
+													i(class="fa fa-shopping-cart")
+									div(class="p-item-detail")
+										h4(class="text-center p-item-name")
+											a(href="product-detail.html")  The Last Stand 
+										p(class="text-center p-item-price") $600.00
+								div(class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp", data-wow-delay=".2s")
+									div(class="product-item")
+										div(class="item p-item-img")
+											img(src="img/products/03.webp", alt="images")
+											div(class="text-center d-flex justify-content-center align-items-center")
+												a(class="listing-cart-icon", href="shop-cart.html")
+													i(class="fa fa-shopping-cart")
+									div(class="p-item-detail")
+										h4(class="text-center p-item-name")
+											a(href="product-detail.html")  Love Does 
+										p(class="text-center p-item-price") $150.00
+								div(class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp", data-wow-delay=".2s")
+									div(class="product-item")
+										div(class="item p-item-img")
+											img(src="img/products/04.webp", alt="images")
+											div(class="text-center d-flex justify-content-center align-items-center")
+												a(class="listing-cart-icon", href="shop-cart.html")
+													i(class="fa fa-shopping-cart")
+									div(class="p-item-detail")
+										h4(class="text-center p-item-name")
+											a(href="product-detail.html") The Imortal Rules 
+										p(class="text-center p-item-price") $400.00
+								div(class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp", data-wow-delay=".2s")
+									div(class="product-item")
+										div(class="item p-item-img")
+											img(src="img/products/01.webp", alt="images")
+											div(class="text-center d-flex justify-content-center align-items-center")
+												a(class="listing-cart-icon", href="shop-cart.html")
+													i(class="fa fa-shopping-cart")
+									div(class="p-item-detail")
+										h4(class="text-center p-item-name")
+											a(href="product-detail.html") As I lay Dying 
+										p(class="text-center p-item-price") $100.00
+								div(class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp", data-wow-delay=".2s")
+									div(class="product-item")
+										div(class="item p-item-img")
+											img(src="img/products/01.webp", alt="images")
+											div(class="text-center d-flex justify-content-center align-items-center")
+												a(class="listing-cart-icon", href="shop-cart.html")
+													i(class="fa fa-shopping-cart")
+									div(class="p-item-detail")
+										h4(class="text-center p-item-name")
+											a(href="product-detail.html")  No One Belongs 
+										p(class="text-center p-item-price") $500.00
+								div(class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp", data-wow-delay=".2s")
+									div(class="product-item")
+										div(class="item p-item-img")
+											img(src="img/products/02.webp", alt="images")
+											div(class="text-center d-flex justify-content-center align-items-center")
+												a(class="listing-cart-icon", href="shop-cart.html")
+													i(class="fa fa-shopping-cart")
+									div(class="p-item-detail")
+										h4(class="text-center p-item-name")
+											a(href="product-detail.html")  Life Without Money 
+										p(class="text-center p-item-price") $200.00
+								div(class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp", data-wow-delay=".2s")
+									div(class="product-item")
+										div(class="item p-item-img")
+											img(src="img/products/06.webp", alt="images")
+											div(class="text-center d-flex justify-content-center align-items-center")
+												a(class="listing-cart-icon", href="shop-cart.html")
+													i(class="fa fa-shopping-cart")
+									div(class="p-item-detail")
+										h4(class="text-center p-item-name")
+											a(href="product-detail.html")  Brave New World 
+										p(class="text-center p-item-price") $120.00
+								div(class="col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp", data-wow-delay=".2s")
+									div(class="product-item")
+										div(class="item p-item-img")
+											img(src="img/products/01.webp", alt="images")
+											div(class="text-center d-flex justify-content-center align-items-center")
+												a(class="listing-cart-icon", href="shop-cart.html")
+													i(class="fa fa-shopping-cart")
+									div(class="p-item-detail")
+										h4(class="text-center p-item-name")
+											a(href="product-detail.html") The Joke 
+										p(class="text-center p-item-price") $150.00
+							// END DISPLAY PRODUCT
+						// END PRODUCT LISTING SECTION
+				// END PRODUCT COL 8
+	// Product Line Up End

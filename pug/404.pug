@@ -1,0 +1,14 @@
+extend index 
+
+block website_title 
+	title delta | 404
+
+block home_block 
+	// 404
+	div(class="error404")
+		div(class="container")
+			div(class="error-content")
+				h2 404
+				p Page Not Found
+				div(class="button")
+					a(class="btn green-color-yellow-gradient-btn", href="index.html") home page

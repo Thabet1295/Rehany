@@ -1,0 +1,42 @@
+extend index 
+
+block website_title 
+	title delta | register
+
+block home_block 
+	// slider sec strat
+	section#slider-sec(class="slider-sec parallax", style="background: url('img/banner1.5.jpg');")
+	// slider sec end
+
+	// Contact Us Start
+	section#contact-sec(class="contact-sec")
+		div(class="container")
+			div(class="row justify-content-center")
+				div(class="col-11 col-lg-8 contact-box wow slideInRight", data-wow-delay=".8s")
+					div(class="c-box wow fadeInRight")
+						h4(class="small-heading") Register
+						hr
+						form(class="contact-form")
+							div(class="row my-form")
+								div(class="col-md-6 col-sm-12")
+									label First Name
+									input(type="text", class="form-control", name="" placeholder="First Name", required="required")
+								div(class="col-md-6 col-sm-12")
+									label Last Name
+									input(type="text", class="form-control", name="" placeholder="Last Name", required="required")
+								div(class="col-md-6 col-sm-12")
+									label Email
+									input(type="email", class="form-control", name="userEmail", placeholder="Email", required="required")
+								div(class="col-md-6 col-sm-12")
+									label Number
+									input(type="number", class="form-control", name="userEmail", placeholder="Number", required="required")
+								div(class="col-md-6 col-sm-12")
+									label Password
+									input(type="password", class="form-control", name="", placeholder="Password", required="required")
+								div(class="col-md-6 col-sm-12")
+									label Confirm Password
+									input(type="password", class="form-control", name="", placeholder="Confirm Password", required="required")
+								div(class="col-12")
+									button(class="btn green-color-yellow-gradient-btn user-contact contact_btn", type="submit")
+										| SUBMIT
+	// Contact Us End

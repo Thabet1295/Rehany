@@ -1,0 +1,86 @@
+extend index 
+
+block website_title 
+	title delta | previous orders
+
+block home_block 
+	// slider sec strat
+	section#slider-sec(class="slider-sec parallax", style="background: url('../img/banner1.5.jpg');")
+	// slider sec end
+	
+	// START HEADING SECTION
+	div(class="about_content")
+		div(class="container")
+			div(class="row")
+				div(class="col-sm-12 col-md-12 col-lg-10  text-center text-lg-left wow slideInUp", data-wow-duration="2s")
+					h2(class="heading") previous orders
+					p(class="para_text") Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores explicabo laudantium, omnis provident consectetur adipisicing elit quam reiciendis voluptatum?
+		// START SHOP CART SECTION
+		div(class="shop-cart wow slideInUp", data-wow-duration="2s")
+			div(class="container")
+				// START SHOP CART TABLE
+				div(class="row pt-5")
+					div(class="col-12 col-md-12  cart_table wow fadeInUp animated", data-wow-delay="100ms", style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;")
+						div(class="table-responsive")
+							table(class="table table-bordered border-radius")
+								thead
+									tr
+										th(class="darkcolor") Product
+										th(class="darkcolor") Total
+										th
+								tbody
+									tr
+										td
+											div(class="d-table product-detail-cart")
+												div(class="media")
+													div(class="row no-gutters")
+														div(class="col-12 col-lg-2 product-detail-cart-image")
+															a(class="shopping-product", href="javascript:void(0)")
+																img(src="../img/shopcart-1.jpg", alt="")
+														div(class="col-12 col-lg-10 mt-auto product-detail-cart-data")
+															div(class="media-body ml-lg-3")
+																h4(class="product-name")
+																	a(href="product-detail.html") Love Does
+																p(class="product-des") We offer the most complete in the country
+										td
+											h4(class="amount") $136.00
+										td(class="text-center")
+											a(class="btn-close", href="order-details.html")
+												i(class="lni-eye")
+									tr
+										td
+											div(class="d-table product-detail-cart")
+												div(class="media")
+													div(class="row no-gutters")
+														div(class="col-12 col-lg-2 product-detail-cart-image")
+															a(class="shopping-product", href="javascript:void(0)")
+																img(src="../img/shopcart-1.jpg", alt="")
+														div(class="col-12 col-lg-10 mt-auto product-detail-cart-data")
+															div(class="media-body ml-lg-3")
+																h4(class="product-name")
+																	a(href="product-detail.html") The Last Stand
+																p(class="product-des") We offer the most complete in the country
+										td
+											h4(class="amount") $106.00
+										td(class="text-center")
+											a(class="btn-close", href="order-details.html")
+												i(class="lni-eye")
+									tr
+										td
+											div(class="d-table product-detail-cart")
+												div(class="media")
+													div(class="row no-gutters")
+														div(class="col-12 col-lg-2 product-detail-cart-image")
+															a(class="shopping-product", href="javascript:void(0)")
+																img(src="../img/shopcart-1.jpg", alt="")
+														div(class="col-12 col-lg-10 mt-auto product-detail-cart-data")
+															div(class="media-body ml-lg-3")
+																h4(class="product-name")
+																	a(href="product-detail.html") The Road
+																p(class="product-des") We offer the most complete in the country
+										td
+											h4(class="amount") $150.00
+										td(class="text-center")
+											a(class="btn-close", href="order-details.html")
+												i(class="lni-eye")
+				// END SHOP CART TABLE

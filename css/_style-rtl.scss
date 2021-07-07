@@ -1,0 +1,264 @@
+html[dir=rtl] {
+   body {
+      text-align: initial;
+      font-family: "Tajawal", sans-serif;
+   }
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   .button,
+   .numbered .tp-bullet .tp-count {
+      font-family: 'Tajawal', sans-serif;
+   }
+
+   .homer-banner .banner-description h2,
+   .navbar {
+      font-family: 'Tajawal', sans-serif;
+   }
+
+   .navbar {
+      .dropdown-menu {
+         text-align: initial;
+
+         .dropdown-item {
+            padding: 0 0.5rem 0 0;
+         }
+
+         .right-arrow {
+            transform: rotateY(180deg);
+         }
+      }
+   }
+
+   .search-box-overlay {
+      right: 70%;
+      left: 0;
+   }
+
+   .side-nav {
+      .navbar-nav {
+         .nav-item {
+            text-align: initial;
+         }
+      }
+   }
+
+   .sideNavPages .nav-link {
+      margin-right: 30px !important;
+      margin-left: 0 !important;
+   }
+
+   .side-menu {
+      right: auto;
+      left: 0;
+      transform: translate3d(-100%, 0, 0);
+
+      &.side-menu-active {
+         transform: translate3d(0, 0, 0);
+      }
+
+      .sub-title {
+         margin-left: 0;
+         margin-right: 43px;
+      }
+
+      .inner-wrapper {
+         text-align: initial
+      }
+   }
+
+   ol ol,
+   ol ul,
+   ul ol,
+   ul ul {
+      margin-left: 0;
+      margin-right: 15px;
+   }
+
+   .manage-icons li {
+      padding-left: 0;
+      padding-right: 15px;
+   }
+
+   .dropdown-toggle::after {
+      margin-left: 0;
+      margin-right: 3px;
+   }
+
+   .homer-banner {
+      .banner-description {
+         a {
+            &:after {
+               transform: rotateY(180deg);
+            }
+         }
+      }
+   }
+
+   .ml-auto,
+   .mx-auto {
+      margin-left: 0 !important;
+      margin-right: auto !important;
+   }
+
+   .mr-3,
+   .mx-3 {
+      margin-right: 0 !important;
+      margin-left: 1rem !important;
+   }
+
+   .mr-2,
+   .mx-2 {
+      margin-left: .5rem !important;
+   }
+
+   .ml-5,
+   .mx-5 {
+      margin-right: 3rem !important;
+   }
+
+   .text-lg-left {
+      text-align: right !important;
+   }
+
+   .text-md-left {
+      text-align: right !important;
+   }
+
+   .text-left {
+      text-align: right !important;
+   }
+
+   .banner-section,
+   .homer-banner {
+      transform: rotateY(180deg);
+
+      .container {
+         transform: rotateY(180deg);
+      }
+   }
+
+   .owl-carousel {
+      direction: ltr;
+
+      .owl-item {
+         direction: rtl;
+      }
+   }
+
+   .portfolio-section .price-before {
+      margin-right: 0;
+      margin-left: 5px;
+   }
+
+   .contact-sec {
+      .contact-detail {
+         .location-details {
+            ul {
+               li {
+                  i {
+                     margin-right: 0;
+                     margin-left: 5px;
+                     left: auto;
+                     right: 0;
+                  }
+
+                  a {
+                     margin-right: 30px;
+                     margin-left: 0;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .cart_table {
+      .shopping-product {
+         margin-right: 0;
+         margin-left: 10px;
+      }
+   }
+
+   .apply_coupon {
+      .btn:first-child {
+         margin-right: 0;
+         margin-left: 5px;
+      }
+   }
+
+   .contact-form {
+      .form-check-label {
+         padding-left: 0;
+         padding-right: 20px;
+      }
+
+      .new-user-btn {
+         margin-left: 0;
+         margin-right: 10px;
+      }
+   }
+
+   .product-body {
+      .product-list {
+         .product-single-price {
+            h4 {
+               .real-price {
+                  margin-right: 0;
+                  margin-left: 5px;
+               }
+            }
+         }
+      }
+
+      .product-detail {
+         .product-checklist {
+            ul {
+               li {
+                  i {
+                     margin-right: 0;
+                     margin-left: 5px;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .product-filter-nav {
+      padding-left: 14%;
+      padding-right: 0;
+   }
+
+   .profile-content {
+      .nav-pills {
+
+         .nav-link.active::before,
+         .profile-content .nav-pills .show>.nav-link::before {
+            left: auto;
+            right: 0;
+         }
+      }
+   }
+
+   .custom-control {
+      padding-right: 1.5rem;
+      padding-left: 0;
+
+      .custom-control-label {
+         &::after {
+            right: -1.5rem;
+            left: auto;
+            background: no-repeat 50%/50% 50%;
+         }
+
+         &::before {
+            right: -1.5rem;
+            left: auto;
+         }
+      }
+   }
+}

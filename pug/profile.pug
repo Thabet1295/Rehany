@@ -1,0 +1,84 @@
+extend index 
+
+block website_title 
+	title delta | profile
+
+block home_block 
+	// slider sec strat
+	section#slider-sec(class="slider-sec parallax", style="background: url('img/banner1.5.jpg');")
+	// slider sec end
+
+	// profile
+	div(class='profile-content')
+		div(class="container")
+			div(class="row")
+				div(class="col-xl-3 col-lg-3")
+					div(class="inner-profile text-white py-5 px-4 shadow rounded mb-4 text-center")
+						img(class="img-profile rounded-circle", src="img/book-1.jpg")
+						h5(class="mb-3 mt-3") Mohamed Sherif
+						a(class="btn btn btn-warning", href="#", data-toggle="modal", data-target="#logoutModal") Sign out
+					div(class="bg-white p-3 shadow rounded mb-4")
+						#sidebar-1(class="nav nav-pills flex-column lavalamp", role="tablist")
+							a(class="nav-link active", data-toggle="tab", href="#sidebar-1-1", role="tab", aria-controls="sidebar-1", aria-selected="true")
+								i(class="fas fa-user-circle fa-sm fa-fw mr-2 ri")
+								| Profile
+							a(class="nav-link", data-toggle="tab", href="#sidebar-1-4", role="tab", aria-controls="sidebar-1-4", aria-selected="false")
+								i(class="fas fa-cog fa-sm fa-fw mr-2 ri")
+								| Account Settings
+				div(class="col-xl-9 col-lg-9")
+					div(class="bg-white p-3 shadow rounded mb-4")
+						#myTabContent(class="tab-content border-0")
+							#sidebar-1-1(class="tab-pane fade active show", role="tabpanel", aria-labelledby="sidebar-1-1")
+								div(class="d-sm-flex align-items-center justify-content-between mb-3")
+									h2(class="h5 mb-0 text-gray-900") Profile
+								form(action="") 
+									div(class="row gutter-1")
+										div(class="col-md-6")
+											div(class="form-group")
+												label(for="") First Name
+												input(class="form-control", type="text", placeholder="First name")
+										div(class="col-md-6")
+											div(class="form-group")
+												label(for="") Last Name
+												input(class="form-control", type="text", placeholder="Last name")
+										div(class="col-md-12")
+											div(class="form-group")
+												label(for="") Profile pic
+												input(class="form-control", type="file", placeholder="Last name")
+										div(class="col-md-6")
+											div(class="form-group")
+												label(for="") Address
+												input(class="form-control", type="text", placeholder="Address")
+										div(class="col-md-6")
+											div(class="form-group")
+												label(for="") Website
+												input(class="form-control", type="text", placeholder="Address")
+										div(class="col-md-6")
+											div(class="form-group")
+												label(for="") Telephone
+												input(class="form-control", type="url", placeholder="Website")
+										div(class="col-md-6")
+											div(class="form-group")
+												label(for="") Email
+												input(class="form-control", type="email", placeholder="Email")
+										div(class="col")
+											a(class="btn btn-primary save-changs", href="#") Save Changes
+							#sidebar-1-4(class="tab-pane fade", role="tabpanel", aria-labelledby="sidebar-1-4")
+								div(class="d-sm-flex align-items-center justify-content-between mb-3")
+									h2(class="h5 mb-0 text-gray-900") Account Settings
+								form(action="") 
+									div(class="row gutter-1")
+										div(class="col-12")
+											div(class="form-group")
+												label(for="exampleInput8") Old Password
+												input#exampleInput8(class="form-control", type="password", placeholder="Password")
+										div(class="col-md-6")
+											div(class="form-group")
+												label(for="exampleInput9") New Password
+												input#exampleInput9(class="form-control", type="password", placeholder="Password")
+										div(class="col-md-6")
+											div(class="form-group")
+												label(for="0") Retype New Password
+												input#0(class="form-control", type="password", placeholder="Password")
+										div(class="col")
+											a(class="btn btn-primary save-changs", href="#") Save Changes

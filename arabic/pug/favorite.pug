@@ -1,0 +1,101 @@
+extend index 
+
+block website_title 
+	title delta | shop cart
+
+block home_block 
+	// slider sec strat
+	section#slider-sec(class="slider-sec parallax", style="background: url('../img/banner1.5.jpg');")
+	// slider sec end
+	
+	// START HEADING SECTION
+	div(class="about_content")
+		div(class="container")
+			div(class="row")
+				div(class="col-sm-12 col-md-12 col-lg-10  text-center text-lg-left wow slideInUp", data-wow-duration="2s")
+					h2(class="heading") Saved Items
+		// START SHOP CART SECTION
+		div(class="shop-cart wow slideInUp", data-wow-duration="2s")
+			div(class="container")
+				// START SHOP CART TABLE
+				div(class="row pt-5")
+					div(class="col-12 col-md-12  cart_table wow fadeInUp animated", data-wow-delay="300ms", style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;")
+						div(class="table-responsive")
+							table(class="table table-bordered border-radius")
+								thead
+									tr
+										th(class="darkcolor") Product
+										th(class="darkcolor") Price
+										th
+								tbody
+									tr
+										td
+											div(class="d-table product-detail-cart")
+												div(class="media")
+													div(class="row no-gutters")
+														div(class="col-12 col-lg-2 product-detail-cart-image")
+															a(class="shopping-product", href="javascript:void(0)")
+																img(src="../img/shopcart-1.jpg", alt="")
+														div(class="col-12 col-lg-10 mt-auto product-detail-cart-data")
+															div(class="media-body ml-lg-3")
+																h4(class="product-name")
+																	a(href="product-detail.html") Love Does
+																p(class="product-des") We offer the most complete in the country
+										td
+											h4(class="amount") $130.00
+											s $160.00
+											span(class="discount-off") 10% off
+										td(class="text-center")
+											div(class="mb-4")
+												a(href="shop-cart.html", class="btn yellow-color-green-gradient-btn") BUY NOW
+											a(class="btn-close", href="javascript:void(0)")
+												i(class="lni-trash")
+									tr
+										td
+											div(class="d-table product-detail-cart")
+												div(class="media")
+													div(class="row no-gutters")
+														div(class="col-12 col-lg-2 product-detail-cart-image")
+															a(class="shopping-product", href="javascript:void(0)")
+																img(src="../img/shopcart-1.jpg", alt="")
+														div(class="col-12 col-lg-10 mt-auto product-detail-cart-data")
+															div(class="media-body ml-lg-3")
+																h4(class="product-name")
+																	a(href="product-detail.html") The Last Stand
+																p(class="product-des") We offer the most complete in the country
+										td
+											h4(class="amount") $130.00
+											s $160.00
+											span(class="discount-off") 10% off
+										td(class="text-center")
+											div(class="mb-4")
+												a(href="shop-cart.html", class="btn yellow-color-green-gradient-btn") BUY NOW
+											a(class="btn-close", href="javascript:void(0)")
+												i(class="lni-trash")
+									tr
+										td
+											div(class="d-table product-detail-cart")
+												div(class="media")
+													div(class="row no-gutters")
+														div(class="col-12 col-lg-2 product-detail-cart-image")
+															a(class="shopping-product", href="javascript:void(0)")
+																img(src="../img/shopcart-1.jpg", alt="")
+														div(class="col-12 col-lg-10 mt-auto product-detail-cart-data")
+															div(class="media-body ml-lg-3")
+																h4(class="product-name")
+																	a(href="product-detail.html") The Road
+																p(class="product-des") We offer the most complete in the country
+										td
+											h4(class="amount") $130.00
+											s $160.00
+											span(class="discount-off") 10% off
+										td(class="text-center")
+											div(class="mb-4")
+												a(href="shop-cart.html", class="btn yellow-color-green-gradient-btn") BUY NOW
+											a(class="btn-close", href="javascript:void(0)")
+												i(class="lni-trash")
+						div(class="apply_coupon")
+							div(class="row")
+								div(class="col-12 text-left")
+									a(href="shop-cart.html", class="btn yellow-color-green-gradient-btn") UPDATE
+									a(href="checkout.html", class="btn green-color-yellow-gradient-btn ") CHECKOUT

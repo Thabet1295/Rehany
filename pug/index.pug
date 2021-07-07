@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+	head
+		// Meta Tags
+		meta(charset="utf-8")
+		meta(content="width=device-width, initial-scale=1, shrink-to-fit=no", name="viewport")
+		// description
+		meta(name="description", content="In Mygshop, we strive to provide the best service to our customers. The high quality of the products will always be our characteristic. We will use our experience in marketing to bring the best products at a satisfactory price for everyone.")
+		// keywords
+		meta(name="keywords", content="Mygshop")
+		// Page Title
+		block website_title 
+			title Delta
+		// Favicon
+		link(rel="icon", href="./img/favicon.png")
+		include ./includes/styles
+	body
+		a(class="scroll-top-arrow", href="javascript:void(0);")
+			i(class="fa fa-angle-up")
+		// LOADER
+		div(class="loader")
+			div(class="loader-spinner")
+		// LOADER
+
+		// START HEADER NAVIGATION
+		include ./includes/header
+		// END HEADER NAVIGATION
+		
+		block home_block
+			include ./includes/home
+
+		//Start of footer  section
+		include ./includes/footer
+		//End of footer  section
+		
+		// JS library
+		include ./includes/scripts
