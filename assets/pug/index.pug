@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		block website_title
+			title Delta Information Technology | home
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon' href='assets/img/fv.png' type='image/x-icon')
+		link(rel='icon' href='assets/img/fv.png' type='image/x-icon')
+		script(src="https://apis.google.com/js/platform.js", async, defer)
+		div(class="g-partnersbadge", data-agency-id="1925366997")
+		//
+			Add the code snippet above to the sites listed to display your badge:
+			http://deltaitech.com
+		include ./includes/styles
+	body.str-home
+		//preloader - start
+			<div id="preloader" class="str-preloader"></div>
+			<div class="up">
+			<a href="#" id="scrollup" class="str-scrollup text-center"><i class="fas fa-angle-up"></i></a>
+			</div>
+		
+		// Start of header section
+		include ./includes/header
+		//End of header section
+		
+		block home_block
+			include ./includes/home
+		
+		//Start of footer  section
+		include ./includes/footer
+		//End of footer  section
+		
+		// JS library
+		include ./includes/scripts

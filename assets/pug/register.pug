@@ -1,0 +1,76 @@
+extend index 
+
+block website_title 
+	title Delta Information Technology | Sign Up
+
+block home_block 
+	section#saasio-breadcurmb(class="saasio-breadcurmb-section")
+		div(class="container")
+			div(class="breadcurmb-title text-center")
+				h2 Sign Up
+			div(class="breadcurmb-item-list text-center ul-li")
+				ul(class="saasio-page-breadcurmb")
+					li
+						a(href="#") Home
+					li
+						a(href="#") Sign Up
+	//Start of login section
+	section(class="str-login-register-section relative-position")
+		.str-aboutbg1.position-absolute
+			img(src='assets/img/startup/shape/vs1.png' alt='')
+		.str-aboutbg2.position-absolute
+			img(src='assets/img/startup/shape/vs2.png' alt='')
+		.str-aboutbg3.position-absolute
+			img(src='assets/img/startup/shape/vs3.png' alt='')
+		div(class="container")
+			div(class="row justify-content-center")
+				div(class="col-md-8 col-sm-10")
+					div(class="login_register_form")
+						form(action="")
+							div(class="row")
+								#result(class="col-md-12 col-sm-12")
+								div(class="col-md-6 col-sm-12")
+									div(class="form-group")
+										label(for="") first name
+										input(class="form-control", type="text", placeholder="first name", name="" required)
+								div(class="col-md-6 col-sm-12")
+									div(class="form-group")
+										label(for="") last
+										input(class="form-control", type="text", placeholder="last name", name="" required)
+								div(class="col-md-6 col-sm-12")
+									div(class="form-group")
+										label(for="") email
+										input(class="form-control", type="email", placeholder="Email", name="" required)
+								div(class="col-md-6 col-sm-12")
+									div(class="form-group")
+										label(for="") phone
+										input(class="form-control", type="number", placeholder="Phone", name="" required)
+								div(class="col-md-12 col-sm-12")
+									div(class="form-group")
+										label(for="") password
+										input(class="form-control", type="password", placeholder="password", name="" required)
+								div(class="col-md-12 col-sm-12")
+									div(class="form-group")
+										label(for="") confirm password
+										input(class="form-control", type="password", placeholder="confirm password", name="" required)
+								div(class="col-md-6 col-sm-12")
+									div(class="form-group")
+										label(for="") address
+										input(class="form-control", type="text", placeholder="address", name="" required)
+								div(class="col-md-6 col-sm-12")
+									div(class="form-group")
+										label(for="") website
+										input(class="form-control", type="url", placeholder="website", name="" required)
+								div(class="col-md-12 col-sm-12")
+									div(class="form-group")
+										label(for="") about me
+										textarea(class="form-control", placeholder="about me", rows="4" name="")
+								//- div(class="col-md-12 col-sm-12")
+								//- 	div(class="form-group")
+								//- 		div(class="form-check")
+								//- 			input#remember(class="form-check-input", type="checkbox", name="remember")
+								//- 			label(class="form-check-label", for="remember")
+								//- 				| remember me
+								//- 			a(href="" class="forget-pass") Forgot Your Password ?
+								div(class="col-md-12 col-sm-12")
+									button(type="submit", class="btn") Sign Up
