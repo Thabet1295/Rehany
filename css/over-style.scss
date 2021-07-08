@@ -1148,16 +1148,90 @@ input[type="file"] {
 }
 
 //error
+.collections {
+    .slick-next {
+        left: 3px;
+        right: auto;
 
-.slick-next {
-    left: 0;
-    right: auto;
-}
-.slick-prev {
-    right: 0;
-    left: auto;
+        &::before {
+            color: $main_color;
+        }
+    }
+
+    .slick-prev {
+        right: 0;
+        left: auto;
+
+        &::before {
+            color: $main_color;
+        }
+    }
 }
 
+//thanks 
+.thanks {
+    padding: 70px 0;
+    background-color: #f7f7f7;
+
+    .thanks-content {
+        text-align: center;
+
+        i {
+            border: 2px solid $main_color;
+            color: $main_color;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: $main_color;
+            font-size: 55px;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-bottom: 15px;
+        }
+
+        p {
+            text-transform: capitalize;
+            color: #5C5C5C;
+            font-size: 26px;
+            max-width: 750px;
+            margin: auto;
+            line-height: normal;
+            margin-bottom: 15px;
+        }
+
+        .button {
+            .btn {
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+//sorry 
+.sorry {
+    @extend .thanks;
+
+    .thanks-content {
+        i {
+            border: none;
+            background-color: #fff;
+            height: 80px;
+            width: 80px;
+            font-size: 40px;
+        }
+    }
+}
+
+//thanks 
 
 //footer 
 .footer {
@@ -1286,10 +1360,12 @@ input[type="file"] {
     .p-5 {
         padding: 1rem !important;
     }
+
     #langugeDropdown {
         width: 20px;
         overflow: hidden;
     }
+
     .topbar .nav-item .nav-link {
         padding: 0 5px;
     }
