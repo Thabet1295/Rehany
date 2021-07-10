@@ -1,0 +1,48 @@
+extend index 
+
+block website_title 
+	title Delta Information Technology | contact
+
+block home_block 
+	section#saasio-breadcurmb(class="saasio-breadcurmb-section")
+		div(class="container")
+			div(class="breadcurmb-title text-center")
+				h2 login
+			div(class="breadcurmb-item-list text-center ul-li")
+				ul(class="saasio-page-breadcurmb")
+					li
+						a(href="#") Home
+					li
+						a(href="#") login
+	//Start of login section
+	section(class="str-login-register-section relative-position")
+		.str-aboutbg1.position-absolute
+			img(src='../assets/img/startup/shape/vs1.png' alt='')
+		.str-aboutbg2.position-absolute
+			img(src='../assets/img/startup/shape/vs2.png' alt='')
+		.str-aboutbg3.position-absolute
+			img(src='../assets/img/startup/shape/vs3.png' alt='')
+		div(class="container")
+			div(class="row justify-content-center")
+				div(class="col-md-8 col-sm-10")
+					div(class="login_register_form")
+						form(action="")
+							div(class="row")
+								#result(class="col-md-12 col-sm-12")
+								div(class="col-md-12 col-sm-12")
+									div(class="form-group")
+										label(for="") email
+										input(class="form-control", type="email", placeholder="Email", name="" required)
+								div(class="col-md-12 col-sm-12")
+									div(class="form-group")
+										label(for="") password
+										input(class="form-control", type="password", placeholder="password", name="" required)
+								div(class="col-md-12 col-sm-12")
+									div(class="form-group")
+										div(class="form-check")
+											input#remember(class="form-check-input", type="checkbox", name="remember")
+											label(class="form-check-label", for="remember")
+												| remember me
+											a(href="" class="forget-pass") Forgot Your Password ?
+								div(class="col-md-12 col-sm-12")
+									button(type="submit", class="btn") login

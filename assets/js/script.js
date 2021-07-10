@@ -680,9 +680,9 @@ Author:
 					nav: false,
 					dots: false,
 					autoplay:true,
-					autoplaySpeed: 6000,
+					autoplaySpeed: 1000,
 					responsiveClass:true,
-					autoplayTimeout: 6000,
+					autoplayTimeout: 2000,
 					autoplayHoverPause: true,
 					slideTransition: 'linear',
 					responsive:{
@@ -690,16 +690,16 @@ Author:
 							items:2,
 						},
 						400:{
-							items:2,
+							items:3,
 						},
 						600:{
 							items:4,
 						},
 						700:{
-							items:3,
+							items:5,
 						},
 						1000:{
-							items:4,
+							items:6,
 
 						}
 					},

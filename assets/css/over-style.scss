@@ -1,5 +1,18 @@
-$main_color: #2681DB;
-$second_color: #FFB251;
+@import "includes/global";
+
+body {
+    #___partnersbadge_0 {
+        position: fixed;
+        top: 50%;
+        left: -195px;
+        z-index: 999;
+        @include transition(all ease 0.5s);
+
+        &:hover {
+            left: 0;
+        }
+    }
+}
 
 .saas_two_section_title,
 .str-section-title {
@@ -150,8 +163,16 @@ $second_color: #FFB251;
 
 .saas_two_banner_section {
     .s2-banner_content {
+        max-width: 600px;
+
         h1 {
             font-size: 36px;
+        }
+    }
+
+    .banner_mockup {
+        img {
+            width: 600px;
         }
     }
 }
@@ -200,12 +221,13 @@ $second_color: #FFB251;
         .str-feature-text {
             h3 {
                 font-size: 18px;
-                min-height: 80px;
-                -webkit-line-clamp: 2;
+                min-height: 60px;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
+                white-space: nowrap;
+                padding: 0 20px;
+                max-width: calc(100% - 40px);
+                margin: auto;
             }
         }
     }
@@ -242,8 +264,8 @@ $second_color: #FFB251;
     .owl-item {
         .str-partner-img {
             width: 100%;
-            height: 200px;
-            background-color: #fff;
+            height: 150px;
+            // background-color: #fff;
             border-radius: 10px;
 
             img {
@@ -309,6 +331,72 @@ $second_color: #FFB251;
 
 //about
 
+//works 
+.str-section-title {
+    max-width: 900px;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        opacity: 0.8;
+    }
+}
+
+//works 
+
+//str single service 
+.str-single-service {
+    .str-feature-icon-text {
+        border: 1px solid transparent;
+
+        .str-feature-text {
+            h3 {
+                color: inherit;
+
+                &::before {
+                    top: 35px;
+                    bottom: auto;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: inherit;
+            box-shadow: none;
+            border-color: #eee;
+
+            &:after,
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+
+.str-feature-section-page {
+    &.str-single-service {
+        .str-feature-icon-text {
+            &:hover {
+                p {
+                    color: inherit;
+                }
+
+                .str-feature-text {
+                    h3 {
+                        &::before {
+                            background-color: $main_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//str single service 
+
 //feature
 .str-feature-section-page {
     .str-feature-box {
@@ -354,7 +442,7 @@ $second_color: #FFB251;
 
 //partner page
 .str-partner-section-page {
-    background-color: #f3f3f3;
+    background-color: #fff;
 
     .str-section-title {
         margin-bottom: 50px;
@@ -385,12 +473,25 @@ $second_color: #FFB251;
                 -o-object-fit: contain;
                 height: 100%;
                 width: 100%;
+                filter: none
             }
         }
     }
 }
 
 //partner page
+
+.smm-case-img {
+    height: 470px;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        -o-object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
 
 //contact page
 .str-contact-section {
@@ -505,23 +606,25 @@ $second_color: #FFB251;
         max-width: 750px;
         margin: auto;
         width: 100%;
-        background-color: rgba(38, 129, 219, 1);
+        background-color: #f9f9f9;
         padding: 50px 40px;
         border-radius: 20px;
         box-shadow: 0 0 15px -3px #d4d4d4;
 
         label {
-            color: #fff;
+            color: #555;
             user-select: none;
             text-transform: capitalize;
         }
 
         .form-control {
             background-color: #fff;
-            border-color: transparent;
+            border-color: #dadada;
             height: auto;
             padding: 10px 15px;
             border-radius: 20px;
+            color: #000;
+
             &:focus {
                 border-color: $second_color;
             }
@@ -529,12 +632,12 @@ $second_color: #FFB251;
 
         .form-check {
             label {
-                color: #fff;
+                color: #555;
                 user-select: none;
             }
 
             .forget-pass {
-                color: #fff;
+                color: #555;
                 float: right;
             }
         }
@@ -545,6 +648,7 @@ $second_color: #FFB251;
             border-radius: 20px;
             color: #fff;
         }
+
         textarea {
             resize: none;
         }
@@ -586,3 +690,6 @@ $second_color: #FFB251;
 }
 
 //footer
+
+@import "includes/responsive";
+@import "includes/style-rtl";
