@@ -514,7 +514,7 @@
      }
   }
 
-  //404 
+  //thanks 
   .thanks {
      padding: 70px 0;
      background-color: #f7f7f7;
@@ -682,8 +682,10 @@
         font-size: 12px;
      }
 
-     table {
-        min-width: 820px;
+     .table-responsive {
+        table {
+           min-width: 820px;
+        }
      }
   }
 
@@ -819,5 +821,8 @@
         .forget-button {
            justify-content: flex-start;
         }
+     }
+     .shop-cart .product-detail-cart .product-detail-cart-image {
+        justify-content: flex-start;
      }
   }
