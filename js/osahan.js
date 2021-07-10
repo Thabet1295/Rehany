@@ -132,16 +132,21 @@ Version: 1.0
   //rating stars (http://auxiliary.github.io/rater/)
   $(document).ready(function () {
     $(".rating").rate();
-
     //or for example
     var options = {
       max_value: 5,
       step_size: 0.5,
       selected_symbol_type: 'fontawesome_star',
-      update_input_field_name: $("#input2"),
     }
     $(".rating").rate(options);
   });
+
+  $(".rating_input").val($(".rating").attr("data-rate-value"))
+
+  $(".rating").on("click", function () {
+    $(".rating_input").val($(this).attr("data-rate-value"))
+  })
+
 
   $(".msg_history").animate({
       scrollTop: $(".msg_history").prop("scrollHeight")
