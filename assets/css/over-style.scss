@@ -213,6 +213,15 @@ body {
     box-shadow: 0 0 30px 31px $second_color;
 }
 
+.saas_two_banner_section {
+    max-width: 100%;
+
+    &::before {
+        background-position: top right;
+        width: 100%;
+    }
+}
+
 //slider
 
 //feature

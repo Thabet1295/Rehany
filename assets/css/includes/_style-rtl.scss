@@ -14,6 +14,10 @@ html[dir=rtl] {
          }
       }
    }
+   .s2-mobile_menu_button {
+      left: 0;
+      right: auto;
+   }
 
    //global
    .float-right {
@@ -264,5 +268,27 @@ html[dir=rtl] {
          padding-right: 20px;
       }
 
+   }
+
+   .s2-pricing_section {
+      .s2-pricing_item {
+         .s2-pricing_price {
+            .pricing_icon {
+               margin-left: 25px;
+               margin-right: 0;
+            }
+         }
+      }
+   }
+
+   .s2-pricing_section {
+      .s2-pricing_item {
+         .s2-pricing_price {
+            .s2-icon_bg {
+               right: auto;
+               left: 10px;
+            }
+         }
+      }
    }
 }

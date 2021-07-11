@@ -8,6 +8,25 @@
    .saas_two_main_header .saas_sign_up_btn {
       top: -22px;
    }
+
+   .saas_two_banner_section {
+
+      &::before {
+         background-position: unset;
+         width: 80%;
+      }
+   }
+
+   html[dir=rtl] {
+      .saas_two_main_header .saas_sign_up_btn {
+         left: 70px;
+         right: auto;
+      }
+   }
+
+   .str-footer-area .footer-content {
+      padding-bottom: 10px;
+   }
 }
 
 @media screen and (max-width: 767px) {
@@ -59,5 +78,39 @@
    .saas_two_banner_section .s2-banner_content .banner_btn a {
       width: 120px;
       font-size: 12px;
+   }
+
+   .str-feature-box {
+      max-width: initial;
+   }
+
+   .str-login-register-section .login_register_form {
+      padding: 25px 15px;
+
+      .form-check {
+         font-size: 12px;
+      }
+
+      .form-group,
+      .form-control {
+         font-size: 14px;
+      }
+
+      .form-check-input {
+         margin-top: 1px;
+      }
+   }
+
+   .str-contact-section .contact-info p {
+      padding-left: 37px;
+      font-size: 14px;
+      line-height: 30px;
+      margin-bottom: 20px;
+
+      i {
+         height: 30px;
+         width: 30px;
+         line-height: 30px;
+      }
    }
 }
