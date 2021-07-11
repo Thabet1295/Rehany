@@ -28,6 +28,33 @@
      font-size: 12px;
   }
 
+  .custom-alerts {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 9999;
+
+     .custom-alert-sucsess,
+     .custom-alert-warning {
+        border-radius: 0;
+        color: #fff;
+        text-align: center;
+        border: 0;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 0;
+        font-size: 14px;
+     }
+
+     .custom-alert-sucsess {
+        background-color: #6dbd28;
+     }
+
+     .custom-alert-warning {
+        background-color: red;
+     }
+  }
+
+
   .navbar-brand {
      margin: 16px 0;
      padding: 0;
@@ -822,6 +849,7 @@
            justify-content: flex-start;
         }
      }
+
      .shop-cart .product-detail-cart .product-detail-cart-image {
         justify-content: flex-start;
      }
