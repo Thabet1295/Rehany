@@ -4,36 +4,62 @@ block website_title
     title events | About
 
 block home_block
-    section(class="py-5 about-us bg-gradient-primary")
+    section(class="py-4 bg-light inner-header")
         div(class="container")
-            div(class="row justify-content-center")
-                div(class="col-lg-10 mx-auto text-center")
-                    h2(class="mt-1 mb-1 text-white") What is 
+            div(class="row d-flex align-items-center")
+                div(class="col-lg-6 col-md-6")
+                    h4(class="mt-0 mb-0 text-dark")
+                        | about
+                div(class="col-lg-6 col-md-6 text-right")
+                    div(class="breadcrumbs")
+                        p(class="mb-0")
+                            a(href="#")
+                                i(class="icofont-ui-home")
+                                | Home
+                            | /
+                            span about
+    section(class="py-5 about-us bg-white")
+        div(class="container")
+            div(class="row")
+                div(class="col-lg-7 text-left")
+                    h2(class="mt-1 mb-1 text-dark") What is 
                         b &quot;Middle East Events&quot;
                         | ?
-                    p(class="mb-3 mt-3 h5 text-white")
+                    p(class="mb-3 mt-3 h5 text-dark")
                         | It is a long established fact that a reader will be distracted by
                         | the readable content of a page when looking at its layout. The point of using Lorem Ipsum is
                         | that it has a more.
-                    p(class="text-white")
+                    p(class="text-dark")
                         | Contrary to popular belief, Lorem Ipsum is not simply random text. It has
                         | roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
                         | Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
                         | the more obscure Latin words, consectetur, from a Lorem Ipsum passage
-                    div(class="row mt-5 pb-3")
-                        div(class="col-lg-6 mb-2")
-                            div(class="bg-white p-4 shadow rounded")
+                    div(class="mt-5 pb-3")
+                        div(class="p-3 shadow rounded mission-vission")
+                            div(class="icon") 
+                                i(class="icofont-bulb-alt")
+                            div(class="text")
                                 h5(class="text-dark mt-0") Our Vision
                                 p(class="text-dark mb-0")
                                     | When looking at its layout. The point of using Lorem Ipsum is
                                     | that it has a more-or-less normal distribution
-                        div(class="col-lg-6")
-                            div(class="bg-white p-4 shadow rounded")
+                        div(class="p-3 shadow rounded mission-vission")
+                            div(class="icon") 
+                                i(class="icofont-bullseye")
+                            div(class="text")
                                 h5(class="text-dark mt-0") Our Mission
                                 p(class="text-dark mb-0")
                                     | It is a long established fact that a of using Lorem Ipsum is
                                     | that it has a more-or-less normal distribution
-    section(class="pt-5 pb-4 pbc-5  box-provide bg-white text-center")
+                div(class="col-lg-5") 
+                    div(class="video-icon") 
+                        div(class="about-image") 
+                            img(src="img/video-img-2.jpg", alt="")
+                        div(class="about-video") 
+                            div(class="about-icon") 
+                                a(data-fancybox="" href="https://youtu.be/lM02vNMRRB0") 
+                                    i(class="fas fa-play fa-2x")
+    section(class="pt-5 pb-4 pbc-5 box-provide bg-light text-center")
         div(class="section-title text-center mb-4")
             h2(class="text-dark") Quick Facts
             p
