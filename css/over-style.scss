@@ -1446,6 +1446,14 @@ input[type="file"] {
 			font-size: 18px;
 		}
 	}
+	.about-us {
+		padding-bottom: 150px !important;
+		.video-icon {
+			margin: auto;
+			width: 450px;
+			height: 450px;
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -1498,5 +1506,40 @@ input[type="file"] {
 
 	.topbar .nav-item .nav-link {
 		padding: 0 5px;
+	}
+	.about-us {
+		.video-icon {
+			width: 380px;
+			height: 380px;
+		}
+		.about-image {
+			width: 380px;
+			height: 380px;
+		}
+		.about-video {
+			width: 150px;
+			height: 150px;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.about-us {
+		.mission-vission {
+			display: block;
+			text-align: center;
+		}
+		.video-icon {
+			width: 300px;
+			height: 300px;
+		}
+		.about-image {
+			width: 300px;
+			height: 300px;
+		}
+		.about-video {
+			width: 120px;
+			height: 120px;
+		}
 	}
 }

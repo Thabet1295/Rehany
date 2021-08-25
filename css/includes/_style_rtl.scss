@@ -239,6 +239,11 @@ html[dir=rtl] {
       margin-left: auto !important;
       margin-right: 0 !important;
    }
+   .about-us {
+      .text-left {
+         text-align: right !important;
+      }
+   }
 }
 [dir=rtl] {
    .slick-next {
