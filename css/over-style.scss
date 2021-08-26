@@ -223,9 +223,9 @@ input[type="file"] {
 		width: 450px;
 		height: 450px;
 	}
-    .video-icon {
-        position: relative;
-    }
+	.video-icon {
+		position: relative;
+	}
 	.about-video {
 		position: absolute;
 		left: 0;
@@ -258,17 +258,17 @@ input[type="file"] {
 			}
 		}
 	}
-    .mission-vission {
-        margin-bottom: 30px;
-        display: grid;
-        grid-template-columns: 80px auto;
-        .icon {
-            i {
-                font-size: 60px;
-                color: #05728f
-            }
-        }
-    }
+	.mission-vission {
+		margin-bottom: 30px;
+		display: grid;
+		grid-template-columns: 80px auto;
+		.icon {
+			i {
+				font-size: 60px;
+				color: #05728f;
+			}
+		}
+	}
 }
 
 .over-text-4 {
@@ -1408,6 +1408,19 @@ input[type="file"] {
 			@include borderRadius(50%);
 			@include transition(all 0.3s ease-in-out);
 		}
+	}
+}
+
+.event-detals-scroll {
+	max-height: 700px;
+	overflow-y: scroll;
+	padding: 0 2px;
+	&::-webkit-scrollbar {
+		width: 5px;
+		height: 5px;
+	}
+	&::-webkit-scrollbar-thumb {
+		@include borderRadius(20px);
 	}
 }
 
