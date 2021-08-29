@@ -173,11 +173,12 @@ input[type="file"] {
 
 	.slick-slide {
 		display: block;
-		height: 500px;
-		overflow: hidden;
+		// height: 500px;
+		// overflow: hidden;
 
 		img {
-			@extend %fitimage;
+			// @extend %fitimage;
+			width: 100%;
 		}
 	}
 }
@@ -1481,7 +1482,7 @@ input[type="file"] {
 
 	.osahan-slider {
 		.slick-slide {
-			height: 300px;
+			// height: 300px;
 		}
 	}
 
