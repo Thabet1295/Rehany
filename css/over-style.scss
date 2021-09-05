@@ -510,6 +510,18 @@ input[type="file"] {
 	max-height: 550px;
 	overflow: hidden;
 	padding: 0 6vw;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 6vw;
+		right: 6vw;
+		top: 0;
+		width: calc(88%);
+		height: 100%;
+		background-image: linear-gradient(0deg, rgb(0 0 0 / 44%), transparent);
+	}
 
 	img {
 		@extend %fitimage;
@@ -1415,7 +1427,7 @@ input[type="file"] {
 .event-detals-scroll {
 	max-height: 700px;
 	overflow-y: scroll;
-	padding: 0 2px;
+	padding: 0 2px 0 0;
 	&::-webkit-scrollbar {
 		width: 5px;
 		height: 5px;
@@ -1426,6 +1438,54 @@ input[type="file"] {
 }
 
 //footer
+
+//counter
+.tick {
+	font-size: 1rem;
+	font-family: "Righteous", "Helvetica Neue", sans-serif;
+	position: absolute;
+	top: -70px;
+	left: calc(50% - 175px);
+	width: auto !important;
+
+	.tick-group {
+		width: auto !important;
+		display: inline-block !important;
+	}
+	.tick-content {
+		width: auto;
+		font-size: 30px;
+		font-weight: 600;
+	}
+}
+.tick-label {
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	font-family: "Righteous", sans-serif;
+	text-transform: capitalize;
+}
+.tick-group {
+	margin: 0 0.25em;
+	text-align: center;
+}
+.tick-flip-panel {
+	color: #ffffff;
+	background-color: #FCB040;
+}
+.tick-group {
+	margin: 0 0.2em;
+	text-align: center;
+}
+//counter
+
+.panorama {
+	width: 100%;
+	
+	iframe {
+		@include borderRadius(10px)
+	}
+}
 
 @import "includes/style_rtl";
 
@@ -1533,6 +1593,12 @@ input[type="file"] {
 		.about-video {
 			width: 150px;
 			height: 150px;
+		}
+	}
+	.tick {
+		left: calc(50% - 104px);
+		.tick-content {
+			font-size: 18px;
 		}
 	}
 }

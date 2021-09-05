@@ -27,10 +27,13 @@ block home_block
                             p(class="mb-0 text-gray-900")
                                 i(class="fas fa-calendar-alt fa-sm fa-fw mr-1")
                                 | Sun 15 Dec at 4:00 PM
-                        //- div
-                            p(class="mb-0 text-gray-600")
-                                i(class="fas fa-film fa-sm fa-fw mr-1")
-                                | Classical, Rock, Sufi | English, Hindi | 12+
+                        div
+                            div(class="tick", data-did-init="handleTickInit")
+                                div(class="tick-content" data-repeat="true", data-layout="horizontal center fit", data-transform="preset(d, h, m, s) -> delay")
+                                    div(class="tick-group")
+                                        div(data-key="value", data-repeat="true", data-transform="pad(00) -> split -> delay")
+                                            span(data-view="flip")
+                                        //- span(data-key="label", data-view="text", class="tick-label")
         div(class="row")
             div(class="col-xl-3 col-lg-3")
                 div(class="event-detals-scroll")

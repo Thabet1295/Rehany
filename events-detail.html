@@ -16,6 +16,7 @@
     <link href="css/icofont.min.css" rel="stylesheet">
     <link href="css/osahan.css" rel="stylesheet">
     <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="css/flip.min.css" rel="stylesheet">
     <link href="css/over-style.css" rel="stylesheet">
   </head>
   <body>
@@ -110,6 +111,15 @@
             <div class="d-flex align-items-center justify-content-between py-3 px-4">
               <div>
                 <p class="mb-0 text-gray-900"><i class="fas fa-calendar-alt fa-sm fa-fw mr-1"></i>Sun 15 Dec at 4:00 PM</p>
+              </div>
+              <div>
+                <div class="tick" data-did-init="handleTickInit">
+                  <div class="tick-content" data-repeat="true" data-layout="horizontal center fit" data-transform="preset(d, h, m, s) -&gt; delay">
+                    <div class="tick-group">
+                      <div data-key="value" data-repeat="true" data-transform="pad(00) -&gt; split -&gt; delay"><span data-view="flip"></span></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -444,6 +454,22 @@
     <script src="js/rater.min.js" defer type="text/javascript"></script>
     <script src="js/beacon.min.js" defer type="text/javascript"></script>
     <script src="js/jquery.fancybox.js" defer type="text/javascript"></script>
+    <script src="js/flip.min.js" type="text/javascript"></script>
     <script src="js/osahan.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function handleTickInit(tick) {
+      var nextYear = new Date().getFullYear() + 1;
+      Tick.count.down(2021 + "-09-05 17:00:00").onupdate = function (value) {
+      tick.value = value;
+      };
+      }
+      //- pannellum.viewer("panorama", {
+      //-     "autoRotate": -10,
+      //-     "autoLoad": true,
+      //-     "type": "equirectangular",
+      //-     "panorama": "https://me-events.me/360/360.jpg",
+      //-     "autoLoad": true
+      //- });
+    </script>
   </body>
 </html>
