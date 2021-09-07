@@ -169,4 +169,8 @@ Version: 1.0
   // ga('create', 'UA-120909275-1', 'auto');
   // ga('send', 'pageview');
 
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
 })(jQuery); // End of use strict

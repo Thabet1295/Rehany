@@ -189,6 +189,13 @@ input[type="file"] {
 
 //slider
 
+.card {
+	@include transition(all ease .3s);
+	&:hover {
+		box-shadow: none !important;
+	}
+}
+
 //offer card
 .offer-card {
 	.m-card-cover {
@@ -433,6 +440,12 @@ input[type="file"] {
 //card people
 .card {
 	.people-item {
+		.people-pic {
+			width: 170px;
+			height: 170px;
+			@include borderRadius(50%)
+		
+		}
 		.people-item-cover {
 			height: 140px;
 			overflow: hidden;
@@ -1439,7 +1452,7 @@ input[type="file"] {
 
 //footer
 
-//counter
+//counter in details page
 .tick {
 	font-size: 1rem;
 	font-family: "Righteous", "Helvetica Neue", sans-serif;
@@ -1477,15 +1490,65 @@ input[type="file"] {
 	margin: 0 0.2em;
 	text-align: center;
 }
-//counter
+//counter in details page
 
-.panorama {
+//panorama
+#panorama {
 	width: 100%;
+	height: 550px;
+	position: relative;
+
+	.pnlm-render-container {
+		height: 100% !important;
+	}
 	
-	iframe {
-		@include borderRadius(10px)
+	canvas {
+		height: 100% !important;
+		width: 100%!important;
+		max-width: 100%;
+		@include borderRadius(15px);
+		box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 	}
 }
+//panorama
+
+//counter in home page
+.tick-home {
+	font-size: 1rem;
+	position: absolute;
+	top: 10px;
+	left: calc(50% - 175px);
+	width: auto !important;
+
+	.tick-group {
+		width: auto !important;
+		display: inline-block !important;
+	}
+	.tick-content {
+		width: auto;
+		font-size: 30px;
+		font-weight: 600;
+	}
+	.tick-label {
+		font-size: 14px;
+		text-align: center;
+		color: #fff;
+		text-transform: capitalize;
+	}
+	.tick-group {
+		margin: 0 0.25em;
+		text-align: center;
+	}
+	.tick-flip-panel {
+		color: #ffffff;
+		background-color: #FCB040;
+	}
+	.tick-group {
+		margin: 0 0.2em;
+		text-align: center;
+	}
+}
+//counter in home page
 
 @import "includes/style_rtl";
 
@@ -1556,6 +1619,9 @@ input[type="file"] {
 
 	.team-card {
 		margin-bottom: 25px;
+	}
+	#panorama {
+		height: 400px;
 	}
 }
 

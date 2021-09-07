@@ -6,11 +6,16 @@
     <div class="osahan-slider-item"><img class="img-fluid rounded" src="img/slider/02.jpg" alt="..."/></div>
   </div>
 </div>
-<div class="panorama pt-5">
-  <div class="container">
-    <iframe width="100%" height="500" style="border-style:none;" src="https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https://me-events.me/360/360.jpg&amp;autoLoad=true&amp;autoRotate=-5"></iframe>
-  </div>
-</div>
+<div class="container"><a href="#"> 
+    <div class="panorama mt-5" id="panorama">
+      <div class="tick tick-home" data-did-init="handleTickInitHome">
+        <div class="tick-content" data-repeat="true" data-layout="horizontal center fit" data-transform="preset(d, h, m, s) -&gt; delay">
+          <div class="tick-group">
+            <div data-key="value" data-repeat="true" data-transform="pad(00) -&gt; split -&gt; delay"><span data-view="flip"></span></div><span class="tick-label" data-key="label" data-view="text"></span>
+          </div>
+        </div>
+      </div>
+    </div></a></div>
 <div class="container">
   <div class="d-flex align-items-center justify-content-between mt-5 mb-3">
     <h2 class="h5 mb-0 float-left">Offers</h2><a class="d-sm-inline-block text-xs float-right" href="offers.html">View All <i class="fas fa-eye fa-sm"></i></a>
@@ -80,7 +85,7 @@
                 </div>
               </div>
               <div class="col-10 p-3">
-                <p class="card-text text-gray-900 mb-1">The 3rd Saudi Conference on Nutrition among Medicine & Life</p>
+                <p class="card-text text-gray-900 mb-1" data-toggle="tooltip" data-placement="bottom" title="The 3rd Saudi Conference on Nutrition among Medicine &amp; Life">The 3rd Saudi Conference on Nutrition among Medicine & Life</p>
                 <p class="card-text"><small class="text-muted"><i class="fas fa-map-marker-alt fa-sm mr-1"></i>Saudi Arabia, Qaseem</small></p>
               </div>
             </div>
