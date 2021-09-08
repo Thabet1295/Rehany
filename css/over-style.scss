@@ -48,7 +48,7 @@ input[type="file"] {
 	outline: none;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__rendered {
+.select2-container--default .select2-selection--single .select2-selection__rende#fff {
 	line-height: 35px;
 }
 
@@ -167,6 +167,109 @@ input[type="file"] {
 
 //header
 
+a.choose-now{
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 10px auto 10px 6%;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    overflow: hidden;
+	background-color: #f62828;
+
+	// &:hover{
+	// 	background: $second_color;
+	// 	color: #050801;
+	// 	box-shadow: 0 0 5px $second_color,
+	// 				0 0 25px $second_color,
+	// 				0 0 50px $second_color,
+	// 				0 0 200px $second_color;
+	// 	 -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+	// }
+	&:nth-child(1){
+		// filter: hue-rotate(270deg);
+	}
+	&:nth-child(2){
+		// filter: hue-rotate(110deg);
+	}
+	span{
+		position: absolute;
+		display: block;
+	}
+	span:nth-child(1){
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: linear-gradient(90deg,transparent, #fff);
+		animation: animate1 1s linear infinite;
+	}
+	@keyframes animate1{
+		0%{
+			left: -100%;
+		}
+		50%,100%{
+			left: 100%;
+		}
+	}
+	span:nth-child(2){
+		top: -100%;
+		right: 0;
+		width: 2px;
+		height: 100%;
+		background: linear-gradient(180deg,transparent, #fff);
+		animation: animate2 1s linear infinite;
+		animation-delay: 0.25s;
+	}
+	@keyframes animate2{
+		0%{
+			top: -100%;
+		}
+		50%,100%{
+			top: 100%;
+		}
+	}
+	span:nth-child(3){
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 2px;
+		background: linear-gradient(270deg,transparent, #fff);
+		animation: animate3 1s linear infinite;
+		animation-delay: 0.50s;
+	}
+	@keyframes animate3{
+		0%{
+			right: -100%;
+		}
+		50%,100%{
+			right: 100%;
+		}
+	}
+	
+	
+	span:nth-child(4){
+		bottom: -100%;
+		left: 0;
+		width: 2px;
+		height: 100%;
+		background: linear-gradient(360deg,transparent, #fff);
+		animation: animate4 1s linear infinite;
+		animation-delay: 0.75s;
+	}
+	@keyframes animate4{
+		0%{
+			bottom: -100%;
+		}
+		50%,100%{
+			bottom: 100%;
+		}
+	}
+}
+
+
 //slider
 .osahan-slider {
 	direction: ltr;
@@ -190,7 +293,7 @@ input[type="file"] {
 //slider
 
 .card {
-	@include transition(all ease .3s);
+	@include transition(all ease 0.3s);
 	&:hover {
 		box-shadow: none !important;
 	}
@@ -298,8 +401,10 @@ input[type="file"] {
 	img {
 		object-fit: contain;
 		height: 150px;
+		width: 100%;
 		-o-object-fit: contain;
 		object-position: center;
+		padding: 15px;
 	}
 }
 
@@ -441,17 +546,23 @@ input[type="file"] {
 .card {
 	.people-item {
 		.people-pic {
-			width: 170px;
-			height: 170px;
-			@include borderRadius(50%)
-		
+			width: 150px;
+			height: 150px;
+			@include borderRadius(50%);
 		}
 		.people-item-cover {
-			height: 140px;
+			height: 120px;
 			overflow: hidden;
+			background: #6a11cb;
+			background: -moz-linear-gradient(-45deg, #6a11cb 0%, #2575fc 100%);
+			background: -webkit-linear-gradient(-45deg, #6a11cb 0%, #2575fc 100%);
+			background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a11cb', endColorstr='#2575fc',GradientType=1 );
 
 			img {
 				@extend %fitimage;
+				object-fit: contain;
+				-o-object-fit: contain;
 			}
 		}
 
@@ -475,6 +586,22 @@ input[type="file"] {
 }
 
 //card people
+
+//companies
+.companies {
+	.p-card {
+		.people-item {
+			.people-item-cover {
+				height: 150px;
+				overflow: hidden;
+				padding: 25px;
+				background: none;
+				margin: 0 0 -30px 0;
+			}
+		}
+	}
+}
+//companies
 
 //personal info
 .personal-info {
@@ -1484,7 +1611,7 @@ input[type="file"] {
 }
 .tick-flip-panel {
 	color: #ffffff;
-	background-color: #FCB040;
+	background-color: #fcb040;
 }
 .tick-group {
 	margin: 0 0.2em;
@@ -1501,13 +1628,13 @@ input[type="file"] {
 	.pnlm-render-container {
 		height: 100% !important;
 	}
-	
+
 	canvas {
 		height: 100% !important;
-		width: 100%!important;
+		width: 100% !important;
 		max-width: 100%;
 		@include borderRadius(15px);
-		box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 	}
 }
 //panorama
@@ -1541,7 +1668,7 @@ input[type="file"] {
 	}
 	.tick-flip-panel {
 		color: #ffffff;
-		background-color: #FCB040;
+		background-color: #fcb040;
 	}
 	.tick-group {
 		margin: 0 0.2em;
@@ -1549,6 +1676,24 @@ input[type="file"] {
 	}
 }
 //counter in home page
+
+.enter-to-event {
+	position: absolute;
+	left: 0;
+	bottom: 30px;
+	width: 100%;
+	text-align: center;
+	.btn-danger {
+		color: #ffffff;
+		background-color: transparent;
+		border: 1px solid #ffffff !important;
+		padding: 10px 25px;
+
+		&:hover {
+			background-color: #fcb040;
+		}
+	}
+}
 
 .artist-list {
 	.rounded-circle {
@@ -1572,9 +1717,19 @@ input[type="file"] {
 			margin-bottom: 25px;
 		}
 	}
+	a.choose-now {
+		padding: 10px 10px;
+		margin: 10px auto 10px 2%;
+	}
+	.osahan-nav-mid a.nav-link {
+		font-size: 12px;
+	}
 }
 
 @media (max-width: 992px) {
+	a.choose-now {
+		// display: none
+	}
 	.eheader div .btn,
 	.info-header div .btn {
 		margin: 13px 5px 0 0;
