@@ -660,7 +660,7 @@ a.choose-now{
 		top: 0;
 		width: calc(88%);
 		height: 100%;
-		background-image: linear-gradient(0deg, rgb(0 0 0 / 44%), transparent);
+		// background-image: linear-gradient(0deg, rgb(0 0 0 / 44%), transparent);
 	}
 
 	img {
@@ -1566,7 +1566,7 @@ a.choose-now{
 
 .event-detals-scroll {
 	max-height: 700px;
-	overflow-y: scroll;
+	overflow-y: auto;
 	padding: 0 2px 0 0;
 	&::-webkit-scrollbar {
 		width: 5px;
@@ -1574,6 +1574,15 @@ a.choose-now{
 	}
 	&::-webkit-scrollbar-thumb {
 		@include borderRadius(20px);
+	}
+}
+
+.widget {
+	.video {
+		margin-top: 10px;
+		iframe {
+			@include borderRadius(10px)
+		}
 	}
 }
 
@@ -1706,6 +1715,12 @@ a.choose-now{
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		max-width: 100%;
+	}
+}
+
+.filter-booths {
+	.btn {
+		margin-bottom: 10px
 	}
 }
 

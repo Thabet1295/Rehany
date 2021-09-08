@@ -247,8 +247,11 @@ html[dir="rtl"] {
 	.event-detals-scroll {
 		padding: 0 0 0 2px;
 	}
+	.modal-header .close {
+		margin-left: 0;
+	}
 }
-[dir="rtl"] {
+html[dir="rtl"] {
 	.slick-next {
 		left: 0;
 	}

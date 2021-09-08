@@ -18,8 +18,8 @@ block home_block
                                     i(class="fas fa-map-marker-alt fa-fw fa-sm mr-1")
                                     | Saudi, Qaseem
                         div(class="eheader-btn")
-                            a(href="#", class="d-sm-inline-block btn btn-primary mr-2 shadow-sm")
-                                i(class="fas fa-share-alt")
+                            //- a(href="#", class="d-sm-inline-block btn btn-primary mr-2 shadow-sm")
+                            //-     i(class="fas fa-share-alt")
                             a(href="payment.html", class="d-sm-inline-block btn btn-danger shadow-sm")
                                 | Subscribe 250 S.R
                     div(class="d-flex align-items-center justify-content-between py-3 px-4")
@@ -34,6 +34,15 @@ block home_block
                                         div(data-key="value", data-repeat="true", data-transform="pad(00) -> split -> delay")
                                             span(data-view="flip")
                                         //- span(data-key="label", data-view="text", class="tick-label")
+                        div(class="d-flex")
+                            a(href="#", class="btn btn-sm btn-primary btn-circle")
+                                i(class="fab fa-facebook-f")
+                            a(href="#", class="btn btn-sm btn-danger btn-circle")
+                                i(class="fab fa-youtube")
+                            a(href="#", class="btn btn-sm btn-warning btn-circle")
+                                i(class="fab fa-snapchat-ghost")
+                            a(href="#", class="btn btn-sm btn-info btn-circle")
+                                i(class="fab fa-twitter")
         div(class="row")
             div(class="col-xl-3 col-lg-3")
                 div(class="event-detals-scroll")
@@ -241,6 +250,11 @@ block home_block
                                 li East Boston Harborwalk
                             p(class="mb-2") The show will begin promptly at midnight.
                             p(class="mb-0") Register here for a reminder and updates about the harbor fireworks and other waterfront public programs as they become available. Be the first to be notified for popular waterfront New Year&apos;s Eve public activities.
+
+                            //video 
+                            div(class="video")
+                                div(class="embed-responsive embed-responsive-16by9")
+                                    iframe(class="embed-responsive-item", src="https://www.youtube.com/embed/mkggXE5e2yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
                         #profile(class="tab-pane fade", role="tabpanel", aria-labelledby="profile-tab")
                             h5(class="mt-0 mb-3") Mon, Dec 31, 2018, 11:59 PM –
                             p Boston Harbor Now in partnership with the Friends of Christopher Columbus Park, the Wharf District Council and the City of Boston is proud to announce the New Year&apos;s Eve Midnight Harbor Fireworks! This beloved nearly 40-year old tradition is made possible by the generous support of local waterfront organizations and businesses and the support of the City of Boston and the Office of Mayor Marty Walsh.
