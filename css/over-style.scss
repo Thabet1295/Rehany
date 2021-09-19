@@ -608,7 +608,7 @@ a.choose-now{
 	.personal-image {
 		object-fit: cover;
 		object-position: center;
-		max-height: 225px;
+		max-height: 380px;
 		min-height: 200px;
 		width: 100%;
 	}
@@ -1733,7 +1733,7 @@ a.choose-now{
 		}
 	}
 	a.choose-now {
-		padding: 10px 10px;
+		padding: 5px 10px;
 		margin: 10px auto 10px 2%;
 	}
 	.osahan-nav-mid a.nav-link {
@@ -1742,9 +1742,6 @@ a.choose-now{
 }
 
 @media (max-width: 992px) {
-	a.choose-now {
-		// display: none
-	}
 	.eheader div .btn,
 	.info-header div .btn {
 		margin: 13px 5px 0 0;
@@ -1806,6 +1803,10 @@ a.choose-now{
 	}
 	#panorama {
 		height: 400px;
+	}
+
+	.events .card .m-card-cover {
+		height: auto;
 	}
 }
 
